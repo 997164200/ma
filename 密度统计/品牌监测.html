@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta charset="utf-8">
+<script src="js/esl.js"></script>
+<script type="text/javascript">
+		// 柱状图路径配置
+       require.config({
+        paths:{ 
+            echarts:'./js/echarts',
+            'echarts/chart/map' : './js/echarts-map'
+        }
+    });
+    require(
+        [
+            'echarts',
+            'echarts/chart/map'
+        ],
+        function (ec) {	
+		   var myChart2 = ec.init(document.getElementById('main_1')); 
+		   var myChart3 = ec.init(document.getElementById('main_2')); 
+          var option2 = {
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['海尔_提及走势']
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'海尔_提及走势',
+            type:'line',
+            stack: '总量',
+            data:[120, 132, 101, 134, 90, 230, 210]
+        },
+    ]
+}; 
+    myChart2.setOption(option2); 
+	myChart3.setOption(option2); 
+                     		
+		})
+</script>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/hangyequshi.css" />
+<link href="css/ppjc.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/pieChart.js"></script>
+<script src="js/hangyequshi.js" type="text/javascript"></script>
+</head>
+<body>
+ <!--头部-->
+  <div class="head">
+    <dl>
+		<dt><a href="#" hidefocus><img src="images/touxiang.jpg" alt="" /></a></dt>
+		<dd>
+		  <a href="#" hidefocus>Kj_wang</a><span>已登录</span><span>|</span><a href="#">退出</a>
+		  <div class="info">
+		    
+		  </div>
+		</dd>
+	</dl>
+    <ul>
+    	<li>
+		    <span>综合首页</span>
+    	</li>
+    	<li>
+		    <em>职能家居</em>
+    		<p><b></b></p>
+			<div class="info">
+			       <a href=""#>智能手机手表</a>
+			       <a href=""#>智能电冰箱</a>
+			       <a href=""#>智能电吹风机</a>
+			</div>
+    	</li>
+    </ul>
+  </div> 
+ <!--导航-->
+    <div class="menu">
+	   <ul>
+	   	<li class="bg hover"><a href="#" hidefocus>决策支持</a></li>
+	   	<li><a href="#" hidefocus>竞争监测</a></li>
+	   	<li><a href="#" hidefocus>客户关系管理</a></li>
+	   	<li><a href="#" hidefocus>系统设置</a></li>
+	   </ul>
+	</div>
+ <!--子导航-->
+	  <div class="sub_menu">
+	     <ul>
+	     	<li class="qushi hover" hidefocus><a href="#"><b></b><span>行业趋势</span></a></li>
+	     	<li class="jiance" hidefocus><a href="#"><b></b><span>品牌监测</span></a></li>
+	     	<li><a href="#" hidefocus>市场研究</a></li>
+	     </ul>
+	  </div>
+	   <div class="main1">
+	     <!--微博统计-->
+		  <div class="tongji">
+		    <div class="title">
+			   <span>品牌监测</span>
+			</div>
+            <div class="pinpaijiance1">
+			    <div class="pinpaijiance1_pinpai fl">
+			      <h2>所有品牌</h2>
+                  <ol>
+                    <li><a href="#" style=" margin-left:0;">海尔</a><a href="#">康佳</a><a href="#">创维</a><a href="#">TCL</a></li>
+                    <li><a href="#" style=" margin-left:0;">海信</a><a href="#">小米</a><a href="#">奇虎360</a></li>
+                    <li><a href="#" style=" margin-left:0;">乐视</a><a href="#">三星</a><a href="#">联想</a><a href="#">苹果</a></li>
+                     <li><a href="#" style=" margin-left:0;">长虹</a></li>
+                  </ol>
+			    </div>
+                <div class="content_l" style="width:250px;">
+			       <h2>数据分布</h2>
+				   <div id="container">
+					<canvas id="chart" width="260" height="243" style="background:none; border:none;"></canvas>
+					<table id="chartData" style="display:none">
+						<tr style="color:#faab46">
+							<td>三星</td><td>182168条</td>
+						</tr>
+						<tr style="color:#ed441d">
+							<td>其他</td><td>92358条</td>
+						</tr>
+						<tr style="color:#d62901">
+							<td>联想</td><td>13358条</td>
+						</tr>
+                        <tr style="color:#b3e1f0">
+							<td>海尔</td><td>91258条</td>
+						</tr>
+                        <tr style="color:#96ddfb">
+							<td>创维</td><td>82158条</td>
+						</tr>
+                        <tr style="color:#1da7d6">
+							<td>小米</td><td>16358条</td>
+						</tr>
+					</table>
+				</div>
+			   </div>
+                <div class="fl zoushi">
+                   <div id="main_1" style="width:300px; height:260px;"></div>
+                </div>
+			</div>
+		  </div>
+          <div class="clear"></div>
+          <div class="pinpaijiance1">
+			    <div class="pinpaijiance1_pinpai fl">
+			      <h2>海尔产品</h2>
+                  <ol>
+                    <li><a href="#" style=" margin-left:0;">海尔</a><a href="#">海尔电视</a><a href="#">海尔冰箱</a></li>
+                    <li><a href="#" style=" margin-left:0;">海尔洗衣机</a><a href="#">海尔热水器</a></li>
+                    <li><a href="#" style=" margin-left:0;">海尔空调</a><a href="#">海尔净水</a></li>
+                    <li style="border-bottom:none"><a href="#" style=" margin-left:0;">海尔生活家</a></li>
+                  </ol>
+			    </div>
+                <div class="fl zoushi">
+                   <div id="main_2" style="width:600px; height:260px;"></div>
+                </div>
+			</div>
+	   </div>
+	 <!--底部-->
+	  <div class="footer">
+	     <p>中国电信股份有限公司&nbsp;北京研究院</p>
+	     <p>&copy; Copyright2012-2015.datafactor.cn.All.Rights.Reserved</p>
+	  </div>
+</body>
+</html>

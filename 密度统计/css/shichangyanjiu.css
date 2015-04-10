@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+.fl { float:left;}
+.fr { float:right}
+
+.yanjiu_con { width:982px; margin:auto; padding-top:6px; border-left:1px solid #0F85BD; border-right:1px solid #0F85BD; border-bottom:1px solid #0F85BD;}
+/*市场研究*/
+.yanjiu { background:#fff; min-height:210px; height:auto;}
+.yanjiu h2 { font-family:"微软雅黑"; font-size:18px; color:#333333; background:url(../images/yanjiu_1.png) no-repeat bottom; text-indent:14px; height:46px; line-height:46px; font-weight:bold}
+
+.yanjiu_cp { height:164px; border:1px solid #7fc9e3;background:#f9f9f9; width:948px; margin:10px auto 0}
+.yanjiu_cp h3 { background:#039acd; height:34px; width:100%; line-height:34px;}
+.yanjiu_cp h3 a { color:#fff; background:url(../images/yanjiu_2.png) no-repeat left; padding-left:20px; margin-left:10px;}
+.yanjiu_table { width:874px; margin-left:16px; }
+.yanjiu_pinpai { border-bottom:1px dashed #85cbe3;height:36px}
+.yanjiu_pinpai p.kuang { width:74px; height:26px; line-height:26px; text-align:center; color:#fff; background:#7ec9e3; font-size:14px; border-radius:4px; margin-top:6px; cursor:pointer}
+.yanjiu_pinpai p.kuang1 { letter-spacing:10px}
+.yanjiu_pinpai label { line-height:36px; margin:0 16px;}
+.yanjiu_pinpai label input { margin-right:10px;}
+.yanjiu_pinpai .yanjiu_select { margin:0 16px;}
+.yanjiu_pinpai .yanjiu_select,.yanjiu_pinpai .yanjiu_ding{ border:1px solid #0099cc; cursor:pointer}
+
+/*微博提及数*/
+.yanjiu_bot { border-bottom:1px solid #eaeaea; width:100%; padding-bottom:10px;}
+.yanjiu_mid { width:948px; margin:10px auto 0}
+.yanjiu_wei { font-family:"微软雅黑"; font-size:16px; color:#333333; text-indent:20px;}
+.yanjiu_wei span { font-size:12px;}
+.yanjiu_wb { border-right:1px solid #c5dadc; height:245px;}
+
+/*热词提及数*/
+.yanjiu_rot{ width:470px;}
+.yj_rot { width:100%; height:42px; background:#039acd;}
+.yj_rot h2 { color:#fff; font-size:14px; font-family:"微软雅黑"; line-height:42px; text-indent:22px;}
+.yj_rot select { width:186px; height:30px; line-height:30px; margin-top:12px; margin-left:66px;}
+.yj_bot { width:468px; height:192px; border:1px solid #eaeaea;}
+.yanjiu_left { margin-right:8px;}
+
+
+
+
+
+

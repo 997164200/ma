@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+.fl{ float:left;}
+.fr{ float:right;}
+
+/*******************************************市场动态*********************************************/
+.scdt { width:984px; margin:0 auto;}
+.scdt p.scdt_biaoti { background:#1084bd; height:46px; line-height:46px;}
+.scdt p.scdt_biaoti span { font-size:18px; color:#FFF; background:url(../images/scdt_fh.jpg) no-repeat left center; display:inline-block; padding-left:35px; margin-left:18px;}
+
+/*统计图*/
+.tjt { width:982px; background:#FFF; border:1px solid #1084bd; overflow:hidden; height:1%; border-top:none;}
+.znjj { width:450px; margin-left:16px; margin-top:10px;}
+.znjj p.tiqu { line-height:36px; border-bottom:1px solid #0fa2ce;}
+.znjj p.tiqu span { font-size:18px; color:#333333; font-weight:bold; border-bottom:2px solid #0fa2ce; line-height:36px; display:inline-block;}
+.tjt_tu img { display:block; min-width:306px; height:262px; margin:0 auto; margin-top:35px;}
+
+.tjt p.xian { height:218px; border-left:1px solid #c5dadd; width:1px; margin:100px 20px 0  20px;} 
+
+.tjt_liebiao { margin-top:25px; border:1px solid #eaeaea; margin-bottom:34px;} 
+.tjt_liebiao ul.biaoti { height:34px; background:#e1f2f9;}
+.tjt_liebiao ul.biaoti li { float:left; line-height:34px;}
+
+.tjt_liebiao ul.biaoti li.mc { font-size:12px; color:#666666; width:74px; text-align:center;}
+.tjt_liebiao ul.biaoti li.sm { font-size:12px; color:#666666; width:74px; text-align:center;}
+.tjt_liebiao ul.biaoti li.lf { font-size:12px; color:#666666; width:74px; text-align:center;}
+.tjt_liebiao ul.biaoti li.yy  { font-size:12px; color:#666666; width:74px; text-align:center;}
+
+.tjt_liebiao ul.biaoti_down{ height:32px; background:#FFF; border-top:1px solid #FFF;border-bottom:1px solid #FFF;}
+.tjt_liebiao ul.biaoti_down li { float:left; line-height:32px;}
+
+.tjt_liebiao ul.biaoti_down li.mc { font-size:12px; color:#666666; width:74px; text-align:center;}
+.tjt_liebiao ul.biaoti_down li.sm { font-size:12px; color:#666666; width:74px; text-align:center;}
+.tjt_liebiao ul.biaoti_down li.lf { font-size:12px; color:#666666;  width:74px; text-align:center;}
+.tjt_liebiao ul.biaoti_down li.yy { font-size:12px; color:#666666; width:74px; text-align:center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

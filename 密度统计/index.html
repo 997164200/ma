@@ -1,0 +1,570 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title></title>
+<meta charset="utf-8">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/hangyequshi.css" />
+<link href="css/yangshi.css" rel="stylesheet" />
+<script src="js/esl.js"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/yangshi.js" type="text/javascript"></script>
+<script src="js/hangyequshi.js" type="text/javascript"></script>
+<script src="js/pieChart.js" type="text/javascript"></script>
+</head>
+<!--[if IE]>
+<script src="js/excanvas.js"></script>
+<![endif]
+-->
+<body>
+ <!--头部-->
+  <div class="head">
+    <dl>
+		<dt><a href="#" hidefocus><img src="images/touxiang.jpg" alt="" /></a></dt>
+		<dd>
+		  <a href="#" hidefocus>Kj_wang</a><span>已登录</span><span>|</span><a href="#">退出</a>
+		  <div class="info">		    
+		  </div>
+		</dd>
+	</dl>
+    <ul>
+    	<li>
+		    <span>综合首页</span>
+    	</li>
+    	<li>
+		    <em>职能家居</em>
+    		<p><b></b></p>
+			<div class="info">
+			       <a href=""#>智能手机手表</a>
+			       <a href=""#>智能电冰箱</a>
+			       <a href=""#>智能电吹风机</a>
+			</div>
+    	</li>
+    </ul>
+  </div>
+ <!--导航-->
+	<div class="menu">
+	   <ul>
+		<li class="bg hover"><a href="#" hidefocus>决策支持</a></li>
+		<li><a href="#" hidefocus>竞争监测</a></li>
+		<li><a href="#" hidefocus>客户关系管理</a></li>
+		<li><a href="#" hidefocus>系统设置</a></li>
+	   </ul>
+	</div> 
+ <!--子导航-->
+	  <div class="sub_menu">
+	     <ul>
+	     	<li class="qushi hover" hidefocus><a href="#"><b></b><span>行业趋势</span></a></li>
+	     	<li class="jiance" hidefocus><a href="#"><b></b><span>品牌监测</span></a></li>
+	     	<li><a href="#" hidefocus>市场研究</a></li>
+	     </ul>
+	  </div>      
+	   <div class="main1">
+	     <!--微博统计-->
+		  <div class="tongji">
+		    <div class="title">
+			   <span>微博统计<b>(单位：条)</b></span>
+			   <p><strong>2014/07/04 - 2014/07/28<i></i></strong><em>7月</em></p>
+			   <div class="info">
+			     <ul>
+				     <li><a href=""#>2014/07/04 - 2014/07/28</a></li>
+				     <li><a href=""#>2014/07/04 - 2014/07/28</a></li>
+				     <li><a href=""#>2014/07/04 - 2014/07/28</a></li>
+				 </ul>
+			   </div>
+			</div>
+            <div class="clear"></div>
+			<div class="content">
+			  <!--微博数-->
+			   <div class="content_l">
+			      <h4>微博数共<span>192,168,199</span><b>条（所有原创和转发，包括有话题）</b></h4>
+				  <div id="container">
+		                   <canvas id="chart" width="300" height="240"></canvas>
+                           <table id="chartData" class="youbian">
+                                <tr style="color:#f32f05" class='hover huati'>
+                                    <td>话题 31%</td><td>7,685.76 ></td>
+                                </tr>
+                                <tr style="color:#e97e16" class="zhuanfa">
+                                    <td>转发 37%</td><td>8,739.00 ></td>
+                                </tr>
+                                <tr style="color:#33add6" class="yuanchuang">
+                                    <td>原创 32%</td><td>7,734.63 ></td>
+                                </tr>
+                            </table>
+				  </div>
+				  <div class="yincanga" style="display:none">
+				  	<ul class="youbian fl" style="margin-top:0;">
+					    <li style="color:#f32f05" class='hover'><b style="margin-right:30px;">话题</b><b>7685.76</b></li>
+						<li style="color:#e97e16"><b style="margin-right:30px;">转发</b><b>8739.00</b></li>
+						<li style="color:#33add6"><b style="margin-right:30px;">原创</b><b>7734.63</b></li>
+					</ul>
+					<div class="yincr fl">
+						<div class="yincr1" style="display:block;">
+						  <h2><b>热门话题</b><span>共<a>1785.76</a>条，占总微博的说<a>30.2%</a></span><strong class="fr" style="cursor:pointer;">X</strong></h2>
+						  <p><span>排行前3的热门话题</span><a>更多</a></p>
+						</div>
+					    <div class="yincr1">
+                           	<h2><b>热门话题</b><span>共<a>1785.76</a>条，占总微博的<a>30.2%</a></span><strong class="fr" style="cursor:pointer;">X</strong></h2>
+						   <p>gongtonghuati</p>
+						</div>
+					    <div class="yincr1">
+						    <h2><b>热门话题</b><span>共<a>1785.76</a>条，占总微博的<a>30.2%</a></span><strong class="fr" style="cursor:pointer;">X</strong></h2>
+                            <p>asdfghjkl;asdfghjkl;'</p>
+                        </div>
+					</div>
+				  </div>
+			   </div>
+
+			  <!--热度-->
+			   <div class="content_r">
+			      <h4>当前热度：<span>火爆了</span></h4>
+				  <ul>
+				  	<li class="putong"><p>1000</p><span>普通</span></li>
+				  	<li class="huo"><p>1000-3000</p><span>火</span></li>
+				  	<li class="henhuo"><p>3000-5000</p><span>很火</span></li>
+				  	<li class="huobao"><p>5000+</p><span>火爆了</span></li>
+				  </ul>
+			   </div>
+			</div>
+		  </div>
+		  
+		 <!--公司排行-->
+		  <div class="paihang">
+		    <h2><p>公司排行</p></h2>
+			<div class="content">
+			   <div class="content_l">
+			     <ol class="compy_top">
+			      	<li class="compy_top1">
+			      		<p class="compy_top11">TOP1</p>
+			      		<div class="compy_top12">
+                          <p>小米小米小米小米</p>
+                          <ol>
+                            <li>9</li>
+                            <li>0</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>5</li>
+                            <li>5</li>
+                            <li>5</li>
+                          </ol>
+                        </div>
+			      	</li>
+                    <li class="compy_top1 compy_top2">
+			      		<p class="compy_top11 compy_top21">TOP2</p>
+			      		<div class="compy_top12 compy_top22">
+                          <p>三星</p>
+                          <ol>
+                            <li>6</li>
+                            <li>0</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>5</li>
+                            <li>5</li>
+                            <li>5</li>
+                          </ol>
+                        </div>
+			      	</li>
+                    <li class="compy_top1">
+			      		<p class="compy_top11 compy_top31">TOP3</p>
+			      		<div class="compy_top12 compy_top22">
+                          <p>苹果</p>
+                          <ol>
+                            <li>6</li>
+                            <li>0</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>5</li>
+                            <li>5</li>
+                            <li>5</li>
+                          </ol>
+                        </div>
+			      	</li>
+			      </ol>
+			   </div>
+			   <div class="content_r">
+					  <ol class="content_jindu">
+						<li><p class="content_number">4</p><p class="content_name">海尔</p><div class="content_cin fl"><p class="content_cin1"></p></div><p class="content_math">1</p></li>
+						<li><p class="content_number">5</p><p class="content_name">海尔尔</p><div class="content_cin fl"><p class="content_cin2"></p></div><p class="content_math">13</p></li>
+						<li><p class="content_number">6</p><p class="content_name">海尔尔尔</p><div class="content_cin fl"><p class="content_cin3"></p></div><p class="content_math">138</p></li>
+						<li><p class="content_number">7</p><p class="content_name">海尔尔尔尔</p><div class="content_cin fl"><p class="content_cin4"></p></div><p class="content_math">1381</p></li>
+						<li><p class="content_number">8</p><p class="content_name">海尔尔尔尔尔</p><div class="content_cin fl"><p class="content_cin5"></p></div><p class="content_math">13810</p></li>
+						<li><p class="content_number">9</p><p class="content_name">海尔尔尔尔尔</p><div class="content_cin fl"><p class="content_cin6"></p></div><p class="content_math">138100</p></li>
+						<li><p class="content_number">10</p><p class="content_name">海尔尔尔尔尔</p><div class="content_cin fl"><p class="content_cin7"></p></div><p class="content_math">1381003</p></li>
+                     </ol>
+			   </div>
+			</div>
+		  </div>
+		 
+		 <!--区域分布-->
+		  <div class="quyu">
+		    <h2><p>区域分布</p></h2>
+			<div class="content">
+			   <div class="content_l">
+			      <div id="map" style="width:570px; height:320px; "></div>
+			   </div>			   
+			   <div class="content_r">		       
+				<div class="content_table">
+				   <div class="content_qiehuan">
+                        <div class="xuanzhuan">
+                          <p class="xuanzhuan1 hover"><a href="#">微博数排行</a></p>
+                            <p class="xuanzhuan2"><img src="images/content_qiehuan.jpg" /></p>
+                          <p class="xuanzhuan1"><a href="#">用户</a></p>
+                        </div>
+                       <ol>
+                        <li class="hover">省份</li>
+                        <li>城市</li>
+                      </ol>
+                     </div>
+                      <div class="content_table1">
+                          <div class="content_table2 hover">
+                             <ul>
+                               <li><p class="content_title">1</p><dl class="content_title1"><dt>北京</dt><dd>508</dd></dl></li>
+                               <li><p class="content_title2">2</p><dl class="content_title3"><dt>上海</dt><dd>508</dd></dl></li>
+                                <li><p class="content_title4">3</p><dl class="content_title5"><dt>杭州</dt><dd>123450812</dd></dl></li>
+                                <li><p class="content_title6">4</p><dl class="content_title7"><dt>大连</dt><dd>1238</dd></dl></li>
+                                <li><p class="content_title6">5</p><dl class="content_title7"><dt>大连</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">6</p><dl class="content_title7"><dt>大连</dt><dd>123450822</dd></dl></li>
+                                <li><p class="content_title6">7</p><dl class="content_title7"><dt>大连</dt><dd>123450822</dd></dl></li>
+                                <li><p class="content_title6">8</p><dl class="content_title7"><dt>大连</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">9</p><dl class="content_title7"><dt>大连</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">10</p><dl class="content_title7"><dt>大连</dt><dd>1234508</dd></dl></li>
+                             </ul>
+                          </div>
+                         
+                          <div class="content_table2">
+                             <ul>
+                               <li><p class="content_title">1</p><dl class="content_title1"><dt>上海</dt><dd>1234508</dd></dl></li>
+                               <li><p class="content_title2">2</p><dl class="content_title3"><dt>上海</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title4">3</p><dl class="content_title5"><dt>上海</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">4</p><dl class="content_title7"><dt>上海</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">5</p><dl class="content_title7"><dt>大连</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">6</p><dl class="content_title7"><dt>上海</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">7</p><dl class="content_title7"><dt>上海</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">8</p><dl class="content_title7"><dt>大连</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">9</p><dl class="content_title7"><dt>上海</dt><dd>1234508</dd></dl></li>
+                                <li><p class="content_title6">10</p><dl class="content_title7"><dt>大连</dt><dd>1234508</dd></dl></li>
+                             </ul>
+                          </div>
+                      </div>
+                  </div>
+			   </div>
+			</div>
+		  </div>
+		  
+		 <!--热词分布-->
+		  <div class="reci">
+		    <h2><p>热词分布</p></h2>
+            <div class="rcfb">
+			   <h2>
+                   集成
+               </h2>
+               <h2 class="chuandai">
+               	   穿戴设备
+               </h2>
+               <h2 class="bingxiang">
+                   冰箱
+               </h2>
+               <h2 class="zhaoming">
+                   照明
+               </h2>
+               <h2 class="kongtiao">
+                   空调
+               </h2>
+               <h2 class="wifi">
+                   WiFi
+               </h2>
+               <h2 class="wuxian">
+                   无线
+               </h2>
+               <h2 class="yingyong">
+                   应用
+               </h2>
+               <h2 class="dianshi">
+                   电视
+               </h2>
+               <h2 class="anfang">
+                   安防
+               </h2>
+               <h2 class="yunchuc">
+                   云储存
+               </h2>
+               <h2 class="luyouq">
+                   路由器
+               </h2>
+               <h2 class="hezi">
+                   盒子
+               </h2>
+               <h2 class="luy">
+                   路由
+               </h2>
+               <h2 class="zhineng">
+                   智能家居
+               </h2>
+               <div class="jiantou">
+                  <span></span>
+                  <b></b>
+                  <h3>搜索频数减少</h3>
+               </div>
+               <div class="dj">
+                  <div class="xian">
+                     <div class="rot_zhu">
+                        <h1>关键词分析-云存储</h1>
+                        <div class="rot_zhu1">
+                           <h3>提及“云存储”的公司</h3>
+                           <div class="rot_zz">
+                               <div class="rot_bj">
+                                  <ul class="rot_beijing">
+                                    <li><span>800</span><b></b></li>
+                                    <li><span>600</span><b></b></li>
+                                    <li><span>400</span><b></b></li>
+                                    <li><span>200</span><b></b></li>
+                                    <li><span>0</span><b class="bor_zui"></b></li>
+                                  </ul>
+                               </div>
+                               <div class="rot_con">
+                                   <ul class="rot_blue">
+                                     <li><b class="blue_1"></b><p>联想</p></li>
+                                     <li><b class="blue_2"></b><p>联想</p></li>
+                                     <li><b class="blue_3"></b><p>联想</p></li>
+                                     <li><b class="blue_4"></b><p>联想</p></li>
+                                     <li><b class="blue_5"></b><p>联想</p></li>
+                                     <li><b class="blue_6"></b><p>联想</p></li>
+                                     <li><b class="blue_7"></b><p>联想</p></li>
+                                     <li><b class="blue_8"></b><p>联想</p></li>
+                                     <li><b class="blue_9"></b><p>联想</p></li>
+                                     <li><b class="blue_10"></b><p>联想</p></li>
+                                   </ul>
+                               </div>
+                           </div>
+                        </div>                                            
+                     </div>
+                     <span class="fr close">X</span>
+                  </div>
+               </div>
+               <div class="rot_ci">
+                   <div class="hua hua_1">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_2">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_3">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_4">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_5">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_6">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_7">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_8">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_9">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_10">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_11">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_12">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_13">asdfghjkl;'asdfghjkl</div>
+                   <div class="hua hua_14">asdfghjkl;'asdfghjkl</div>
+               </div>
+            </div>        
+		  </div>
+		  
+		 <!--人群分布-->
+		  <div class="renqun">
+		    <h2><p>人群分布</p></h2>
+			<div class="content">
+               		   <div class="content_l">
+			      <h4>性别分布</h4>
+				  <ul>
+				  	<li><img src="images/man.jpg" alt="" /><p class="nanlan">男</p></li>
+				  	<li class="shuju"><p>72%<span>男用户数:12345个<b></b></span></p><em>28%<i>女用户数:12345个<b></b></i></em></li>
+				  	<li><img src="images/woman.jpg" alt="" /><p class="nvhong">女</p></li>
+				  </ul>
+			   </div>
+			   
+			   <div class="content_r">
+			      <h4>年龄分布</h4>
+                  <div id="news">
+                    <div class="con">
+                        <ol style="display:block">
+                         <li class="nan"><div class="total"><p class="percent percent1"><span>19岁以下<br>12345(10%)<em></em></span></p></div><p class="title"><img src="images/nan1.jpg" /></p></li>
+                         <li  class="nan"><div class="total"><p class="percent percent2"><span>111111111<em></em></span></p></div><p class="title"><img src="images/nan2.jpg" /></p></li>
+                         <li  class="nan"><div class="total"><p class="percent percent3"><span>111111111<em></em></span></p></div><p class="title"><img src="images/nan3.jpg" /></p></li>
+                         <li  class="nan"><div class="total"><p class="percent percent4"><span>111111111<em></em></span></p></div><p class="title"><img src="images/nan4.jpg" /></p></li>
+                         <li  class="nan"><div class="total"><p class="percent percent5"><span>111111111<em></em></span></p></div><p class="title"><img src="images/nan5.jpg" /></p></li>
+                       </ol>
+                       <ol>
+                         <li class="nv"><div class="total"><p class="percent percent1"></p></div><p class="title"><img src="images/nv1.jpg" /></p></li>
+                         <li  class="nv"><div class="total"><p class="percent percent2"></p></div><p class="title"><img src="images/nv2.jpg" /></p></li>
+                         <li  class="nv"><div class="total"><p class="percent percent3"></p></div><p class="title"><img src="images/nv3.jpg" /></p></li>
+                         <li  class="nv"><div class="total"><p class="percent percent4"></p></div><p class="title"><img src="images/nv4.jpg" /></p></li>
+                         <li  class="nv"><div class="total"><p class="percent percent5"></p></div><p class="title"><img src="images/nv5.jpg" /></p></li>
+                       </ol>
+                       
+			         </div>
+	             </div>
+			   </div>
+			</div>
+		  </div>
+
+		 <!--时间分布-->
+          <div class="shijian">
+		    <h2><p>时间分布</p></h2>
+			<div class="righttu fr" style="margin:300px 60px  0">
+			    <p style="border-bottom:1px solid #ccc; width:150px; padding-bottom:4px;"><img src='images/baitian.png'  /><span style="display:inline-block; line-height:30px; margin-left:16px; font-size:14px;font-weight:800;color:#343434;">白天</span></p>
+			    <p style=" width:150px; margin-top:4px;"><img src='images/bangwan.png'  /><span style="display:inline-block; line-height:30px; margin-left:16px; font-size:14px;font-weight:800;color:#343434;">傍晚</span></p>
+			</div>
+			<div id="timemap"  style="min-width: 420px;max-width: 710px; height: 400px;"></div>
+		  </div>		 
+	   </div>
+
+	 <!--底部-->
+	  <div class="footer">
+	     <p>中国电信股份有限公司&nbsp;北京研究院</p>
+	     <p>&copy; Copyright2012-2015.datafactor.cn.All.Rights.Reserved</p>
+	  </div>
+<script type="text/javascript">
+     require.config({
+        paths:{ 
+            echarts:'./js/echarts',
+            'echarts/chart/map' : './js/echarts-map'
+        }
+    });
+var map;
+var timemap;
+var  main3;
+    require(
+        [
+            'echarts',
+            'echarts/chart/map'
+        ],
+        function (ec) {
+			map = ec.init(document.getElementById('map'));
+			timemap = ec.init(document.getElementById('timemap'));
+ 
+timemap.setOption(
+{
+    
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    calculable : true,
+    series : [
+        {
+            name:'面积模式',
+            type:'pie',
+            radius : [30, 170],
+            center : ['50%', 200],
+            roseType : 'area',
+            data:[
+        {value:60, name:'12:00', itemStyle:{ normal: { color :'#FDAE47' }, emphasis: { color: '#E97E16' }}},
+				 {value:90, name:'13:00', itemStyle:{ normal : {color:'#FDAE47', label : { show : false},labelLine : {show : false }}, emphasis: { color: '#E97E16' }} },
+                {value:80, name:'14:00', itemStyle:{ normal: { color :'#FDAE47' }, emphasis: { color: '#E97E16' }} },
+				{value:100, name:'15:00', itemStyle:{ normal : { color:'#FDAE47',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#E97E16' }} },
+                {value:50, name:'16:00', itemStyle:{ normal: { color :'#FDAE47' }, emphasis: { color: '#E97E16' }} },
+				 {value:50, name:'17:00', itemStyle:{normal : { color:'#FDAE47',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#E97E16' }} },
+                {value:60, name:'18:00pm', itemStyle:{ normal: { color :'#0C6796' }, emphasis: { color: '#094162' }} },
+				{value:60, name:'19:00', itemStyle:{ normal : { color:'#0C6796',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#094162' }} },
+                {value:80, name:'20:00', itemStyle:{ normal: { color :'#0C6796' }, emphasis: { color: '#094162' }} },
+				 {value:80, name:'21:00', itemStyle:{ normal : { color:'#0C6796',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#094162' }} },
+                {value:100, name:'22:00', itemStyle:{ normal: { color :'#0C6796' }, emphasis: { color: '#094162' }} },
+				{value:100, name:'23:00', itemStyle:{ normal : { color:'#0C6796',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#094162' }} },
+                {value:20, name:'24:00', itemStyle:{ normal: { color :'#0C6796' }, emphasis: { color: '#094162' }} },
+				{value:100, name:'01:00', itemStyle:{ normal : { color:'#0C6796',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#094162' }} },
+                {value:10, name:'02:00' , itemStyle:{ normal: { color :'#0C6796' }, emphasis: { color: '#094162' }} },
+                {value:100, name:'03:00', itemStyle:{ normal : { color:'#0C6796',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#094162' }} },
+				{value:40, name:'04:00' , itemStyle:{ normal: { color :'#0C6796' }, emphasis: { color: '#094162' }} },
+                {value:100, name:'05:00', itemStyle:{ normal : { color:'#0C6796',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#094162' }} },
+				{value:20, name:'06:00am', itemStyle:{ normal: { color :'#FDAE47' }, emphasis: { color: '#E97E16' }} },
+				{value:20, name:'07:00am', itemStyle:{ normal : { color:'#FDAE47',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#E97E16' }} },
+                {value:50, name:'08:00' , itemStyle:{ normal: { color :'#FDAE47' }, emphasis: { color: '#E97E16' }} },
+				{value:20, name:'09:00am', itemStyle:{ normal : { color:'#FDAE47',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#E97E16' }} },
+                {value:90, name:'10:00', itemStyle:{ normal: { color :'#FDAE47' }, emphasis: { color: '#E97E16' }} },
+				 {value:90, name:'11:00', itemStyle:{ normal : { color:'#FDAE47',label : { show : false},labelLine : {show : false }}, emphasis: { color: '#E97E16' }} }
+            ]
+                    
+        }
+    ]
+}
+)
+  map.setOption(option = {
+    title : {
+        text: '',
+        subtext: '',
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item'
+    },
+    legend: {
+        orient: 'vertical',
+        x:'left',
+        data:['','','']
+    },
+    dataRange: {
+        min: 0,
+        max: 2500,
+        x: 'left',
+        y: 'bottom',
+        text:['高','低'],           // 文本，默认为数值文本
+        calculable : false
+    },
+    toolbox: {
+        show : false,
+        orient : 'vertical',
+        x: 'right',
+        y: 'center',
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    series : [
+        {
+            name: '转发',
+            type: 'map',
+            mapType: 'china',
+            roam: false,
+            itemStyle:{
+                normal:{label:{show:false}},
+                emphasis:{label:{show:true}}
+            },
+            data:[
+                {name: '北京',value: 10000},
+                {name: '天津',value: 3000},
+                {name: '上海',value: 800},
+                {name: '重庆',value: 500},
+                {name: '河北',value: 99999},
+                {name: '河南',value:1234},
+                {name: '云南',value: 666666},
+                {name: '辽宁',value: Math.round(Math.random()*1000)},
+                {name: '黑龙江',value: Math.round(Math.random()*1000)},
+                {name: '湖南',value: Math.round(Math.random()*1000)},
+                {name: '安徽',value: Math.round(Math.random()*1000)},
+                {name: '山东',value: Math.round(Math.random()*1000)},
+                {name: '新疆',value: Math.round(Math.random()*1000)},
+                {name: '江苏',value: Math.round(Math.random()*1000)},
+                {name: '浙江',value: Math.round(Math.random()*1000)},
+                {name: '江西',value: Math.round(Math.random()*1000)},
+                {name: '湖北',value: Math.round(Math.random()*1000)},
+                {name: '广西',value: Math.round(Math.random()*1000)},
+                {name: '甘肃',value: Math.round(Math.random()*1000)},
+                {name: '山西',value: Math.round(Math.random()*1000)},
+                {name: '内蒙古',value: Math.round(Math.random()*1000)},
+                {name: '陕西',value: Math.round(Math.random()*1000)},
+                {name: '吉林',value: Math.round(Math.random()*1000)},
+                {name: '福建',value: Math.round(Math.random()*1000)},
+                {name: '贵州',value: Math.round(Math.random()*1000)},
+                {name: '广东',value: Math.round(Math.random()*1000)},
+                {name: '青海',value: Math.round(Math.random()*1000)},
+                {name: '西藏',value: Math.round(Math.random()*1000)},
+                {name: '四川',value: Math.round(Math.random()*1000)},
+                {name: '宁夏',value: Math.round(Math.random()*1000)},
+                {name: '海南',value: Math.round(Math.random()*1000)},
+                {name: '台湾',value: Math.round(Math.random()*1000)},
+                {name: '香港',value: Math.round(Math.random()*1000)},
+                {name: '澳门',value: Math.round(Math.random()*1000)}
+            ]
+        }
+    ]
+})
+}
+)
+</script>
+</body>
+</html>

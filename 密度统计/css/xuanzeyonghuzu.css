@@ -1,0 +1,425 @@
+body{
+  width:1000px;
+  margin:auto;
+  background:#24323a url(../images/body-bj.jpg) no-repeat center top;
+  height:100%;
+}
+.main1{
+  width:982px;
+  margin:auto;
+  background:#fff;
+  border:1px #0f85bd solid;
+  overflow:hidden;
+  margin-top:10px;
+}
+
+/*头部*/
+.head{
+  height:80px;
+  background:#1a6bb4 url(../images/head-bj.jpg) no-repeat;
+  margin-top:2px;
+}
+.head dl{
+  float:right;
+  margin-right:56px;
+  margin-top:23px;
+}
+.head dl dt{
+  width:32px;
+  height:32px;
+  border-radius:32px;
+  overflow:hidden;
+  float:left;
+}
+.head dl dd{
+  float:left;
+  line-height:32px;
+  margin-left:12px;
+  position:relative;
+}
+.head dl dd a{
+  color:#026eb6;
+  font-size:14px;
+  font-weight:bold;
+}
+.head dl dd a:hover{
+  text-decoration:underline;
+}
+.head dl dd span{
+  display:inline-block;
+  border:4px transparent solid;
+  border-bottom:none;
+  border-top-color:#026eb6;
+  margin-left:16px;
+  cursor:pointer;
+}
+.head dl dd .info{
+  width:100px;
+  height:200px;
+  background:#fff;
+  border:1px #dfdfdf solid;
+  position:absolute;
+  top:30px;
+  left:0px;
+  display:none;
+  z-index:999;
+}
+.head ul{
+  float:right;
+  margin-top:25px;
+  margin-right:44px;
+}
+.head ul li{
+  float:left;
+  height:31px;
+  padding:0px 0px 0px 14px;
+  background:url(../images/fenlei-bj.jpg) repeat-x;
+  color:#fff;
+  margin-left:24px;
+  cursor:pointer;
+  position:relative;
+}
+.head ul li span{
+  background:url(../images/diannao.jpg) no-repeat left center; 
+  padding-left:22px;
+  float:left;
+  line-height:31px;
+  margin-right:10px;
+}
+.head ul li em{
+  float:left;
+  line-height:31px;
+  margin-right:10px;
+}
+.head ul li p{
+  display:inline-block;
+  width:28px;
+  height:31px;
+  background:url(../images/yyx.jpg) no-repeat left center;
+  float:left;
+  text-align:center;
+  line-height:28px;
+}
+.head ul li p b{
+  display:inline-block;
+  width:0px;
+  height:0px;
+  border:4px transparent solid;
+  border-bottom:none;
+  border-top-color:#fff;
+}
+.head ul li .info{
+  width:200px;
+  height:200px;
+  background:#fff;
+  border:1px #dfdfdf solid;
+  position:absolute;
+  top:33px;
+  left:0px;
+  display:none;
+  z-index:999;
+}
+/*导航*/
+.menu{
+  height:40px;
+  background:url(../images/menu-bj.jpg) repeat-x;
+  padding-left:44px;
+  overflow:hidden;
+}
+.menu ul li{
+  float:left;
+  line-height:40px;
+  background:url(../images/yyx.jpg) no-repeat right center;
+}
+.menu ul li a{
+  display:inline-block;
+  height:40px;
+  line-height:40px;
+  padding:0px 83px;
+  font-size:14px;
+  color:#fff;
+  text-shadow:-1px -1px 1px #427593;
+}
+.menu ul li a:hover{
+  background:url(../images/menu-hover.jpg) no-repeat top center;
+}
+.menu ul li.bg{
+  background:url(../images/yyx.jpg) no-repeat left center,url(../images/yyx.jpg) no-repeat right center;
+}
+.menu ul li.hover a{
+  background:url(../images/menu-hover.jpg) no-repeat top center;
+}
+/*子导航*/
+.sub_menu{
+  height:47px;
+  background:#fff;
+}
+.sub_menu ul{
+  padding-top:5px;
+  margin-left:45px;
+}
+.sub_menu ul li{
+  float:left;
+  height:36px;
+  line-height:36px;
+  margin-right:16px;
+}
+.sub_menu ul li.hover a{
+  background:#039acd;
+  border-radius:5px;
+  color:#fff;
+  font-weight:bold;
+}
+.sub_menu ul li a{
+  height:36px;
+  line-height:36px;
+  color:#039acd;
+  font-size:14px;
+  display:inline-block;
+  padding:0 20px;
+}
+.sub_menu ul li a:hover{
+  color:#fff;
+  background:#039acd;
+  border-radius:5px;
+}
+.sub_menu ul li b{
+  height:36px;
+  background:url(../images/tubiao2.png) no-repeat left center;
+  margin-right:12px;
+  padding-top:-5px;
+  float:left;
+  margin-top:10px;
+}
+.sub_menu ul li span{
+  float:left;
+}
+.sub_menu ul li a:hover b{
+  background:url(../images/tubiao2-hover.png) no-repeat left center;
+}
+.sub_menu ul li.hover b{
+  background:url(../images/tubiao2-hover.png) no-repeat left center;
+}
+.sub_menu ul .list1 b{
+  background-position:0px 0px;
+  width:16px;
+  height:16px;
+}
+.sub_menu ul .list2 b{
+  background-position:0px -17px;
+  width:14px;
+  height:13px;
+}
+.sub_menu ul .list3  b{
+  background-position:0px -31px;
+  width:15px;
+  height:15px;
+}
+.sub_menu ul .list4  b{
+  background-position:0px -46px;
+  width:14px;
+  height:14px;
+}
+.sub_menu ul .list5 b{
+  background-position:0px -62px;
+  width:19px;
+  height:14px;
+}
+
+.sub_menu ul .list1 a:hover b{
+  background-position:0px 0px;
+  width:16px;
+  height:16px;
+}
+.sub_menu ul .list2 a:hover b{
+  background-position:0px -17px;
+  width:14px;
+  height:13px;
+}
+.sub_menu ul .list3 a:hover b{
+  background-position:0px -31px;
+  width:15px;
+  height:15px;
+}
+.sub_menu ul .list4 a:hover b{
+  background-position:0px -46px;
+  width:14px;
+  height:14px;
+}
+.sub_menu ul .list5 a:hover b{
+  background-position:0px -62px;
+  width:19px;
+  height:14px;
+}
+
+.sub_menu ul .list1.hover b{
+  background-position:0px 0px;
+  width:16px;
+  height:16px;
+}
+.sub_menu ul .list2.hover b{
+  background-position:0px -17px;
+  width:14px;
+  height:13px;
+}
+.sub_menu ul .list3.hover b{
+  background-position:0px -31px;
+  width:15px;
+  height:15px;
+}
+.sub_menu ul .list4.hover b{
+  background-position:0px -46px;
+  width:14px;
+  height:14px;
+}
+.sub_menu ul .list5.hover b{
+  background-position:0px -62px;
+  width:19px;
+  height:14px;
+}
+/*参数设置*/
+.canshu {
+  
+}
+.canshu .title{
+  height:47px;
+  background:#039acd;
+  padding-left:16px;
+  position:relative;
+}
+.canshu .title span{
+  float:left;
+  line-height:45px;
+  color:#fff;
+  font-size:18px;
+}
+.canshu .title p{
+  float:right;
+  line-height:47px;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+  font-size:14px;
+  margin-right:17px;
+}
+.canshu .title p img{
+  margin:0px 15px 0px 10px;
+}
+.canshu .title p a{
+  margin-left:15px;
+  color:#fff;
+}
+.canshu .title p a:hover{
+  text-decoration:underline;
+}
+.canshu .content{
+  width:948px;
+  margin:auto;
+  margin-top:29px;
+  margin-bottom:15px;
+}
+.canshu .content ul{
+  height:26px;
+  background:#039acd;
+  border:1px #039acd solid;
+  padding-left:20px;
+}
+.canshu .content ul li{
+  float:left;
+  height:26px;
+  line-height:26px;
+  color:#fff;
+  font-size:16px;
+}
+.canshu .content ol{
+  padding-top:24px;
+  padding-bottom:14px;
+  overflow:hidden;
+  border:1px #eaeaea solid;
+  margin-bottom:20px;
+  background:#f9f9f9;
+}
+.canshu .content ol li{
+
+}
+.canshu .content ol li select{
+  width:229px;
+  height:28px;
+  height:auto\9;
+  border:1px #0e85bd solid;
+  margin-left:28px;
+}
+.canshu .content ol li .btn{
+  width:72px;
+  height:26px;
+  color:#fff;
+  background:#009bcb;
+  border-radius:2px;
+  border:none;
+  cursor:pointer;
+  margin-left:28px;
+  margin-top:16px;
+}
+.canshu .content ol li.hover{
+  background:#f04f23;
+}
+.canshu .content ol li span{
+  background:url(../images/xinzeng.png) no-repeat left center;
+  padding-left:18px;
+}
+.canshu .content ol li em{
+  background:url(../images/xiugai.png) no-repeat left center;
+  padding-left:18px;
+}
+.canshu .content ol li b{
+  background:url(../images/shanchu2.png) no-repeat left center;
+  padding-left:20px;
+}
+
+.canshu .content .tab{
+  width:100%;
+  border-collapse:1;
+  border-spacing:1;
+  border:1px #7fc9e4 solid;
+}
+.canshu .content .tab tr th{
+  height:44px;
+  background:#bfe5f2;
+  line-height:44px;
+  text-align:center;
+  font-size:14px;
+  font-weight:bold;
+  color:#666668;
+}
+.canshu .content .tab tr.hover{
+  color:#049acd;
+}
+.canshu .content .tab tr td{
+  height:59px;
+  line-height:59px;
+  text-align:center;
+  /*font-size:14px;*/
+}
+.canshu .content .tab tr td .text{
+  width:53px;
+  height:24px;
+  line-height:24px;
+  padding-left:5px;
+  border:1px #9fc1cb solid;
+}
+
+
+/*底部*/
+.footer{
+  height:80px;
+  text-align:center;
+  background:#0173a9;
+  margin-top:10px;
+  padding-top:24px;
+  font-weight:normal;
+}
+.footer p{
+  color:#fff;
+  margin-top:10px;
+  font-family:"宋体";
+}
